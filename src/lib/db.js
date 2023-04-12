@@ -2,10 +2,10 @@
 import mysql from "serverless-mysql";
 const db = mysql({
   config: {
-    host: process.env.DB_HOST,
+    host: "aws.connect.psdb.cloud",
     database: "test",
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
+    user: "qi83ubjmb9qeutj4i30a",
+    password: "pscale_pw_90a13ltNIaxREHhtGCccp0osL6oJPPcBXBiCPF6aNXi",
   },
 });
 export default async function excuteQuery({ query, values }) {
